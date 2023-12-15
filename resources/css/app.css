@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.activeNav{
+    @apply border-l-4 border-yellow-100 bg-yellow-50
+}
