@@ -63,4 +63,4 @@ jobs:
           app-name: 'SimbaBPS'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_882107A963A948A386F2E7D8DAF91130 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7D2A7E1591CD4DEB8AC64A3FC24C3289 }}
