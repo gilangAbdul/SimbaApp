@@ -46,11 +46,11 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('simbabps-server.mysql.database.azure.com', '127.0.0.1'),
+            'host' => env('simbabps-server.mysql.database.azure.com', 'simbabps-server.mysql.database.azure.com'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('simbabps-database', 'forge'),
-            'username' => env('zjhnmzepqu', 'forge'),
-            'password' => env('U2V84404B320F7TB$', ''),
+            'database' => env('simbabps-database', 'simbabps-database'),
+            'username' => env('zjhnmzepqu', 'zjhnmzepqu'),
+            'password' => env('U2V84404B320F7TB$', 'U2V84404B320F7TB$'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
@@ -59,7 +59,7 @@ return [
             'strict' => true,
             'engine' => null,
             'options' => extension_loaded('pdo_mysql') ? array_filter([
-                PDO::MYSQL_ATTR_SSL_CA => env('/home/site/wwwroot/ssl/DigiCertGlobalRootCA.crt.pem'),
+                PDO::MYSQL_ATTR_SSL_CA => '/home/site/wwwroot/ssl/DigiCertGlobalRootCA.crt.pem',
             ]) : [],
         ],
 
